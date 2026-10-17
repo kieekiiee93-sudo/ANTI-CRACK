@@ -1929,10 +1929,15 @@ function autoBypass()
       HexPatches.MemoryPatch("libanogs.so", 0x438154, "h00 00 80 D2 C0 03 5F D6", 32);
       HexPatches.MemoryPatch("libanogs.so", 0x431D70, "h00 00 80 D2 C0 03 5F D6", 32);
       HexPatches.MemoryPatch("libanogs.so", 0x48A6B4, "h00 00 80 D2 C0 03 5F D6", 32);
+      
+HexPatches.MemoryPatch("libanogs.so", 0x1f8408, "h00 00 80 D2 C0 03 5F D6")
+HexPatches.MemoryPatch("libanogs.so", 0x1f87b0, "h00 00 80 D2 C0 03 5F D6")
+HexPatches.MemoryPatch("libanogs.so", 0x204100, "hE0 03 1F 2A")
+HexPatches.MemoryPatch("libanogs.so", 0x41ba40, "h00 00 80 D2 C0 03 5F D6")
   end)
   
   -- Isang beses na lang lalabas ang Toast na ito
-  showToast("BYPASS ACTIVATED")
+  showToast("BYPASS ACTIVATED + HOLD REPORT")
 end
 
 -- I-load ang bypass nang hindi binibigla ang main thread sa pagsisimula
